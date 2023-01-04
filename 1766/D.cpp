@@ -11,6 +11,9 @@ ANS=min{c_i}
 前計算O((Max)loglog(Max)) (Eratosthenesの篩を用いる)
 素因数の個数が高々logD,それぞれO(1)なので,
 O((Max)loglog(Max)+TlogD)
+ミス:
+Eratosthenesの篩を用いずに素数判定してTLE
+素因数を不必要にsetで管理してTLE
 */
 
 #include <iostream>
